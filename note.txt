@@ -33,3 +33,11 @@ subscribe : store의 변화를 감지하면 인자값으로 준 함수를 실행
 [2.0 Vanilla ToDo]
 MUTATE state를 쓰지 말 것!
 
+[2.1 State Mutation]
+<Redux의 3원칙>
+1. state는 single source of truth
+2. state는 READ-ONLY. store를 수정할 수 있는 유일한 방법은 action을 보내는 방법 뿐임
+2. state를 mutate하지 않는다. mutating state하는 대신에 new state object를 반환해야 됨
+mutate는 state를 직접 변형하는 것!
+3. 변화는 순수 함수(함수 내 변수 외에 외부의 값을 참조, 의존하거나 변경하지 않는 함수)로 작성되어야 함
+
