@@ -41,3 +41,6 @@ MUTATE state를 쓰지 말 것!
 mutate는 state를 직접 변형하는 것!
 3. 변화는 순수 함수(함수 내 변수 외에 외부의 값을 참조, 의존하거나 변경하지 않는 함수)로 작성되어야 함
 
+[2.3 Delete To Do part Two]
+mutate하면 해당 state의 주소는 같기 때문에 변경되었는지 알아볼 수 x => mutate하지 않고 새로운 state를 반환하는 것
+
